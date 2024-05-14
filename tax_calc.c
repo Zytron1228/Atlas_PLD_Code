@@ -36,7 +36,7 @@ int main() {
 			} 
 			else {
 				printf("Never Gonna Give You Up!\n");
-						suprise();
+				suprise();
 			}
         	}
 	}
