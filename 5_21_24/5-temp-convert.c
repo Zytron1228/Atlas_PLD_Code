@@ -11,12 +11,12 @@ int main(void)
 
 	while (convertTo == '0')
 	{
-	printf("Which temperature would you like to convert TO? (C/F): ");
-	scanf("%c", &convertTo);
-	if (convertTo == 'c' || convertTo == 'C')
-		convertFrom = 'F';
-	else if (convertTo == 'f' || convertTo == 'F')
-                convertFrom = 'C';
+	printf("Which temperature would you like to convert FROM? (C/F): ");
+	scanf("%c", &convertFrom);
+	if (convertFrom == 'c' || convertFrom == 'C')
+		convertTo = 'F';
+	else if (convertFrom == 'f' || convertFrom == 'F')
+                convertTo = 'C';
 	else
 		printf("Please type \"C\" or \"F\"");
 	}
@@ -27,7 +27,7 @@ int main(void)
 	 if (convertFrom == 'C')
 		 tempOutput = (tempInput * 1.8 + 32);
 	else
-		tempOutput = (tempInput / 1.8 - 32);
+		tempOutput = ((tempInput - 32) / 1.8);
 
-	printf("$%.1f°%c is $%.1f°%c.", tempInput, convertFrom, tempOutput, convertTo);
+	printf("$%.1f°%c is $%.1f°%c.\n", tempInput, convertFrom, tempOutput, convertTo);
 }
