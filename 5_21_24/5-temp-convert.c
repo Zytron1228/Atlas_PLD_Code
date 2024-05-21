@@ -24,9 +24,10 @@ int main(void)
 	printf("Input temperature in °%c to convert to °%c. °%c: ", convertFrom, convertTo, convertFrom);
 	scanf("%f", &tempInput);
 
-	tempOutput = if (convertFrom == 'C')
-	       (tempInput * 1.8 + 32);
-	else (tempInput / 1.8 - 32);
+	 if (convertFrom == 'C')
+		 tempOutput = (tempInput * 1.8 + 32);
+	else
+		tempOutput = (tempInput / 1.8 - 32);
 
 	printf("$%.1f°%c is $%.1f°%c.", tempInput, convertFrom, tempOutput, convertTo);
 }
