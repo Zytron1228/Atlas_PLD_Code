@@ -8,7 +8,7 @@ int main(void)
 	float tempF;
 
 	printf("Input temperature in °C to convert to °F. °C: ");
-	scanf("$%.1f\n", &tempC);
+	scanf("%f", &tempC);
 
 	tempF = (tempC * 1.8 + 32);
 
