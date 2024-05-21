@@ -18,7 +18,7 @@ int main(void)
 	else if (convertFrom == 'f' || convertFrom == 'F')
                 convertTo = 'C';
 	else
-		printf("Please type \"C\" or \"F\"");
+		printf("Please type \"C\" or \"F\"\n");
 	}
 
 	printf("Input temperature in °%c to convert to °%c. °%c: ", convertFrom, convertTo, convertFrom);
